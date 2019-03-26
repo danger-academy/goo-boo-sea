@@ -6,7 +6,7 @@
 }
 
 .card-container:hover .card,
-.card-container.hover .card {
+.card-container.active .card {
     transform: rotateY(180deg);
     cursor: pointer;
 }
@@ -86,14 +86,7 @@
                 text-decoration: none;
                 display: block;
                 width: 210px;
-                z-index: 1;
-
-                @media not all and (min-resolution: .001dpcm) {
-                    .safari10 {
-                        z-index: 1000;
-
-                    }
-                }
+                z-index: 1000;
             }
 
             .cardDel {
@@ -112,14 +105,7 @@
                 border-color: $brown;
                 font-family: inherit;
                 outline: 0;
-                z-index: 1;
-
-                _::-webkit-full-page-media,
-                _:future,
-                :root .safari_only {
-                    z-index: 1000;
-                }
-
+                z-index: 1000;
             }
         }
     }
