@@ -6,9 +6,9 @@
     .title {
         font-size: 60px;
         font-family: $font-title;
-        color: $black;
+        color: $ivory;
         @include text-shadow;
-        border: 2px solid $moss;
+        border: 3px solid $moss;
 
         @media (max-width: 630px) {
             font-size: 50px;
@@ -22,8 +22,9 @@
     .subtitle {
         font-size: 28px;
         font-family: $font-title;
+        color: $ivory;
         padding-top: 15px;
-        border-bottom: 1px solid $black;
+        border-bottom: 2px solid $moss;
         width: 280px;
         text-align: center;
         margin: 0 auto;

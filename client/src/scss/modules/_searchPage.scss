@@ -27,7 +27,7 @@
 
             @media (max-width: 515px) {
                 padding: 7px 0;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
 
@@ -46,16 +46,19 @@
 
             @media (max-width: 515px) {
                 padding: 7px 0;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
 
         .searchField {
             width: 250px;
-            ;
             font-size: 20px;
             outline: 0;
             border: 2px solid $moss;
+            
+            @media (max-width: 515px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -65,7 +68,7 @@
         justify-content: space-evenly;
         border-style: solid;
         border-color: $moss;
-        border-width: 2px;
+        border-width: 3px;
         margin: 20px;
     
         .noMessage {

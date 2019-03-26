@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -23,13 +24,7 @@ class Search extends Component {
             placeholder="Type a Book Name"
             name="bookQuery"
           />
-          <button
-            type="button"
-            className="searchBtn searchField"
-            onClick={handleFormSubmit}
-          >
-              Search For Books
-          </button>
+          <button type="button" className="searchBtn searchField" onClick={handleFormSubmit}>Search For Books</button>
         </form>
 
         <div className="searchResults">
@@ -44,12 +39,8 @@ class Search extends Component {
                     <div className="cardTitle">{book.title}</div>
                     <div className="cardAuthor">{book.authors}</div>
                     <div className="cardDesc">{book.description}</div>
-                    <a className="cardInfo" href={book.link} rel="noopener noreferrer" target="_blank">
-                      View More Info
-                    </a>
-                    <button type="button" className="cardDel" onClick={() => saveBook(book.bookId)}>
-                      Save This Book
-                    </button>
+                    <a className="cardInfo" href={book.link} rel="noopener noreferrer" target="_blank">View More Info</a>
+                    <button type="button" className="cardDel" onClick={() => saveBook(book.bookId)}>Save This Book</button>
                   </div>
                 </div>
               </div>
