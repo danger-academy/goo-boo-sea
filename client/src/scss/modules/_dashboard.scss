@@ -1,0 +1,39 @@
+// Dashboard
+.dashboard {
+    text-align: center;
+    margin: 20px;
+
+    .title {
+        font-size: 60px;
+        font-family: 'MedievalSharp', cursive;
+        color: $black;
+        @include text-shadow;
+        border: 2px solid black;
+
+        @media (max-width: 630px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 515px) {
+            font-size: 32px;
+        }
+    }
+
+    .subtitle {
+        font-size: 28px;
+        padding-top: 15px;
+        border-bottom: 1px solid $black;
+        width: 280px;
+        text-align: center;
+        margin: 0 auto;
+
+        @media (max-width: 630px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 515px) {
+            font-size: 20px;
+            width: 180px;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+// SearchPage
+.searchPage {
+    margin: 60px 40px 20px;
+
+    @media (max-width: 925px) {
+        margin: 20px 10px;
+    }
+
+    @media (max-width: 515px) {
+        margin: 20px 0;
+    }
+
+    .searchForm {
+        text-align: center;
+
+        .searchInput {
+            padding: 10px 0;
+            border-radius: 5px 0 0 5px;
+            text-align: center;
+
+            @media (max-width: 630px) {
+                padding-right: 0px;
+                width: 80%;
+                margin: 5px auto;
+                border-radius: 8px;
+            }
+
+            @media (max-width: 515px) {
+                padding: 7px 0;
+                font-size: 16px;
+            }
+        }
+
+        .searchBtn {
+            padding: 10px;
+            color: $white;
+            background-color: $blue;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+
+            @media (max-width: 630px) {
+                width: 80%;
+                margin: 5px auto;
+                border-radius: 8px;
+            }
+
+            @media (max-width: 515px) {
+                padding: 7px 0;
+                font-size: 16px;
+            }
+        }
+
+        .searchField {
+            width: 250px;
+            ;
+            font-size: 20px;
+            outline: 0;
+            border: 2px solid $blue;
+        }
+    }
+
+    .searchResults {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-style: solid;
+        border-color: $blue;
+        border-width: 2px;
+        margin: 20px;
+    
+        .noMessage {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+
+            @media (max-width: 515px) {
+                font-size: 40px;
+                margin-top: 80px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

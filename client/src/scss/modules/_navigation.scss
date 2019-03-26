@@ -1,0 +1,27 @@
+// Navigation
+.navbar {
+    background-color: $blue;
+    text-align: center;
+    padding: 20px;
+    @include box-shadow;
+
+    .navLinks {
+        text-decoration: none;
+
+        .links {
+            display: inline;
+            padding: 40px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $white;
+
+            @media (max-width: 515px) {
+                padding: 10px;
+            }
+        }
+
+        .active {
+            color: $black;
+        }
+    }
+}

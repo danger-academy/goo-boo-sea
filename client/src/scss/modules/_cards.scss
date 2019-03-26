@@ -1,0 +1,103 @@
+// Cards
+.card-container {
+    perspective: 1000px;
+    float: left;
+    border-radius: 8px;
+}
+
+.card-container:hover .card,
+.card-container.hover .card {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.card-container,
+.front,
+.back {
+    width: 260px;
+    height: 390px;
+    margin: 40px;
+
+    @media (max-width: 515px) {
+        margin: 20px;
+    }
+}
+
+.card-container {
+    .card {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+        margin: -40px;
+
+        @media (max-width: 515px) {
+            margin: -20px;
+        }
+
+        .front,
+        .back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .front {
+            z-index: 2;
+            transform: rotateY(0deg);
+
+            .cardImg {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .back {
+            transform: rotateY(180deg);
+            text-align: center;
+            @include box-shadow;
+            border-radius: 8px;
+
+            .cardTitle {
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 0 20px;
+            }
+
+            .cardAuthor {
+                padding: 10px;
+            }
+
+            .cardDesc {
+                padding: 15px;
+            }
+
+            .cardInfo {
+                margin-top: 20px;
+                background-color: $blue;
+                color: $white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                width: 210px;
+            }
+
+            .cardDel {
+                background-color: $lightred;
+                color: $white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                cursor: pointer;
+                border-radius: 0 0 8px 8px;
+                width: 100%;
+                font-size: 16px;
+                border-color: $lightred;
+                font-family: inherit;
+                outline: 0;
+            }
+        }
+    }
+}
