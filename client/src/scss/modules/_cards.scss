@@ -87,12 +87,19 @@
                 display: block;
                 width: 210px;
                 z-index: 1;
+                @media not all and (min-resolution: .001dpcm) {
+                    @media {
+                        .safari10 {
+                            z-index: 1000;
+                        }
+                    }
+                }
             }
 
             .cardDel {
                 background-color: $brown;
                 color: $white;
-                position:fixed;
+                position: fixed;
                 bottom: 0;
                 padding: 14px 25px;
                 text-align: center;
@@ -106,6 +113,10 @@
                 font-family: inherit;
                 outline: 0;
                 z-index: 1;
+                _::-webkit-full-page-media, _:future, :root .safari_only {
+                    z-index: 1000;
+                }
+                
             }
         }
     }
