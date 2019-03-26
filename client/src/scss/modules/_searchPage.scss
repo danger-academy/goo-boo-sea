@@ -34,7 +34,7 @@
         .searchBtn {
             padding: 10px;
             color: $white;
-            background-color: $blue;
+            background-color: $moss;
             border-radius: 0 5px 5px 0;
             cursor: pointer;
 
@@ -55,7 +55,7 @@
             ;
             font-size: 20px;
             outline: 0;
-            border: 2px solid $blue;
+            border: 2px solid $moss;
         }
     }
 
@@ -64,7 +64,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         border-style: solid;
-        border-color: $blue;
+        border-color: $moss;
         border-width: 2px;
         margin: 20px;
     
@@ -72,9 +72,11 @@
             display: block;
             width: 100%;
             text-align: center;
+            font-family: $font-title;
             font-size: 50px;
             margin-top: 100px;
             margin-bottom: 50px;
+            @include text-shadow;
 
             @media (max-width: 515px) {
                 font-size: 40px;

@@ -1,19 +1,20 @@
 // Navigation
 .navbar {
-    background-color: $blue;
+    background-color: $moss;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     @include box-shadow;
 
     .navLinks {
         text-decoration: none;
+        font-family: $font-title;
 
         .links {
             display: inline;
             padding: 40px;
             font-size: 20px;
             text-transform: uppercase;
-            color: $white;
+            color: $ivory;
 
             @media (max-width: 515px) {
                 padding: 10px;
@@ -22,6 +23,7 @@
 
         .active {
             color: $black;
+            @include text-shadow; 
         }
     }
 }

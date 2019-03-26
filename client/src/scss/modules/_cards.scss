@@ -37,6 +37,7 @@
         .front,
         .back {
             backface-visibility: hidden;
+            background-color: $ivory;
             position: absolute;
             top: 0;
             left: 0;
@@ -55,27 +56,31 @@
         .back {
             transform: rotateY(180deg);
             text-align: center;
+            text-overflow: ellipsis;
             @include box-shadow;
             border-radius: 8px;
 
             .cardTitle {
                 font-size: 22px;
                 font-weight: bold;
-                padding: 40px 0 20px;
+                padding: 40px 0 15px;
             }
 
             .cardAuthor {
+                font-weight: bold;
                 padding: 10px;
             }
 
             .cardDesc {
-                padding: 15px;
+                padding: 10px;
             }
 
             .cardInfo {
-                margin-top: 20px;
-                background-color: $blue;
+                margin-top: 10px;
+                background-color: $moss;
                 color: $white;
+                position: fixed;
+                bottom: 50px;
                 padding: 14px 25px;
                 text-align: center;
                 text-decoration: none;
@@ -84,8 +89,10 @@
             }
 
             .cardDel {
-                background-color: $lightred;
+                background-color: $brown;
                 color: $white;
+                position:fixed;
+                bottom: 0;
                 padding: 14px 25px;
                 text-align: center;
                 text-decoration: none;
@@ -94,7 +101,7 @@
                 border-radius: 0 0 8px 8px;
                 width: 100%;
                 font-size: 16px;
-                border-color: $lightred;
+                border-color: $brown;
                 font-family: inherit;
                 outline: 0;
             }

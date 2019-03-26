@@ -3,8 +3,9 @@ body {
   padding: 0;
   font-family: $font-main;
   background-color: $white;
+  background-image: url(https://www.winterharp.com/images/v2/bg_main.jpg);
+  background-size: cover;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -16,6 +17,6 @@ img {
 }
 
 @mixin text-shadow {
-  -webkit-text-shadow: 0px 4px 7px rgb(80, 80, 80);
-  text-shadow: 0px 4px 7px rgba(80, 80, 80, 1);
+  -webkit-text-shadow: 0px 4px 7px rgb(29, 29, 29);
+  text-shadow: 0px 4px 7px rgba(29, 29, 29, 1);
 }

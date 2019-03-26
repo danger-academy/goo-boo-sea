@@ -5,10 +5,10 @@
 
     .title {
         font-size: 60px;
-        font-family: 'MedievalSharp', cursive;
+        font-family: $font-title;
         color: $black;
         @include text-shadow;
-        border: 2px solid black;
+        border: 2px solid $moss;
 
         @media (max-width: 630px) {
             font-size: 50px;
@@ -21,6 +21,7 @@
 
     .subtitle {
         font-size: 28px;
+        font-family: $font-title;
         padding-top: 15px;
         border-bottom: 1px solid $black;
         width: 280px;
