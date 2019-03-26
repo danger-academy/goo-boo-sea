@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import API from '../utils/API';
@@ -43,12 +44,8 @@ class Saved extends Component {
                   <div className="cardTitle">{book.title}</div>
                   <div className="cardAuthor">{book.authors}</div>
                   <div className="cardDesc">{book.description}</div>
-                  <a className="cardInfo" href={book.link} rel="noopener noreferrer" target="_blank">
-                      View More Info
-                  </a>
-                  <button type="button" className="cardDel" onClick={() => this.deleteBook(book._id)}>
-                        Delete This Book
-                  </button>
+                  <a className="cardInfo" href={book.link} rel="noopener noreferrer" target="_blank">View More Info</a>
+                  <button type="button" className="cardDel" onClick={() => this.deleteBook(book._id)}>Delete This Book</button>
                 </div>
               </div>
             </div>
