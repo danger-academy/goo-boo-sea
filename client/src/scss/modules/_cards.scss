@@ -7,8 +7,9 @@
 
 .card-container:hover .card,
 .card-container.hover .card {
-    transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
     cursor: pointer;
 }
 
@@ -45,8 +46,9 @@
         }
 
         .front {
-            z-index: 2;
-            transform: rotateY(0deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 
             .cardImg {
                 width: 100%;
@@ -55,6 +57,8 @@
         }
 
         .back {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
             transform: rotateY(180deg);
             text-align: center;
             text-overflow: ellipsis;
@@ -92,7 +96,7 @@
             .cardDel {
                 background-color: $brown;
                 color: $white;
-                position:fixed;
+                position: fixed;
                 bottom: 0;
                 padding: 14px 25px;
                 text-align: center;
