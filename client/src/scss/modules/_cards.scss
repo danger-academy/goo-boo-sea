@@ -8,6 +8,7 @@
 .card-container:hover .card,
 .card-container.hover .card {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     cursor: pointer;
 }
 
