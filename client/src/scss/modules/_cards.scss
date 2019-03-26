@@ -36,7 +36,7 @@
 
         .front,
         .back {
-            backface-visibility: hidden;
+            backface-visibility: visible;
             background-color: $ivory;
             position: absolute;
             top: 0;
@@ -44,12 +44,16 @@
         }
 
         .front {
-            z-index: 2;
+            z-index: 0;
             transform: rotateY(0deg);
 
             .cardImg {
                 width: 100%;
                 border-radius: 8px;
+
+                @media (hover:none){
+                    height:80%;
+                }
             }
         }
 
@@ -93,7 +97,7 @@
                 background-color: $brown;
                 color: $white;
                 position: fixed;
-                bottom: 0;
+                bottom: 0px;
                 padding: 14px 25px;
                 text-align: center;
                 text-decoration: none;
