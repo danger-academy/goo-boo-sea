@@ -13,4 +13,5 @@ Deployed to Heroku, utilizing mLab for MongoDB.
 * [express](https://github.com/expressjs/express) - The server for handling and routing HTTP requests
 * [mongoose](https://www.npmjs.com/package/mongoose) - Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment
 * [axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js
-* [webpack](https://www.npmjs.com/package/webpack) - Bundle JavaScript files for usage in a browser,
+* [webpack](https://www.npmjs.com/package/webpack) - Bundle JavaScript files for usage in a browser
+* [sass](https://sass-lang.com/) - CSS extension language
